@@ -1,2 +1,30 @@
-<h1>Keney Players Club Site</h1>
-<h3>Sign in</h3>
+<div id="container">
+    <main>
+        
+        <form [formGroup]="signinForm" (submit)="onSubmit()">
+            <h3>Sign in</h3>
+            <div class="form-group">
+                <label for="username">Username: </label>
+                <input type="text" 
+                class="form-control" 
+                id="username" 
+                formControlName="username" />
+            </div>
+            <div class="form-group">
+                <label for="password">Password: </label>
+                <input type="password" Class="form-control" 
+                id="password" 
+                formControlName="password" />
+            </div>
+            <div class="form-group">
+                <button type="submit" 
+                class="btn btn-outline-primary"
+                [disabled]="!signinForm.valid">Submit &#8954;</button>   
+            </div>
+            <div Class="form-group">
+                Create an account!
+            </div>
+        </form>
+    </main>
+</div>
+
