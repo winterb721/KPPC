@@ -102,6 +102,12 @@ button{
 	width:160px;
 	height:88px;
 }
+.background{
+    background-image: url('./assets/number5Fall.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 72pc;
+}
 
 .liYellow{
 	background-color:lightyellow;
